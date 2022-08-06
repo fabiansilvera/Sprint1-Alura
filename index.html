@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="resset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Encriptador Alura</title>
+    </head>
+    <body>
+    <div class="layout-lateral">
+      <main>
+        <header class="alineamiento">
+            <img class="logo" src="img-challenge/Logo.png" alt="logo Alura">
+            <h1 class="titulo">Encriptador</h1>
+        </header>
+    
+      
+        <section class="mensaje">
+        <textarea class="textarea textarea-principal" name="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+        <img class="advertencia" src="img-challenge/Frame 1.png" alt="advertencia">
+        </section>
+
+        <div class="botones-layout">
+            <input class="boton boton-encriptar" id="encriptar" type="button" value="Encriptar">
+            <input class="boton boton-desencriptar" id="desencriptar" type="button" value="Desencriptar">
+        </div>
+       </main>
+
+        <section class="side">
+            <div  class="mensaje-criptico">
+                <div class="imagen-layout">
+                    <h2 class="placeholder">Ningún mensaje fue encontrado</h2>
+                </div>
+                <textarea class="textarea textarea-criptico" placeholder="Ingrese el texto que desees encriptar o desencriptar." name="encriptado" id="" cols="30" rows="10"></textarea>   
+                <input class="boton boton-copiar" id="copiar" type="button" value="Copiar">
+          </div>
+        </section>
+    </div>
+
+        <footer class="text-footer">&#169;Angel Fabian Silvera</footer>
+        <script src="script.js"></script>
+        
+    </body>
+</html>

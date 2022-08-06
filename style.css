@@ -1,0 +1,151 @@
+html 
+{
+    font-size: 62.5%; /* 10 px = 1 rem*/
+    box-sizing: border-box; /* hack box model */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background: #E5E5E5
+}
+header h1 {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+}
+.alineamiento {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.logo {
+    padding: 3% 0;
+}
+.textarea {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #0A3871;
+    border: none;
+    padding: 3% 8%;
+    width: 100%;
+    font-weight: 400;
+    max-width: 100%;
+}
+.textarea-principal {
+    line-height: 150%;
+    font-size: 25px;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    height: 250px;
+}
+.textarea-principal::placeholder {
+    color: #0A3871;
+    text-align: center;
+}
+.advertencia {
+    margin: 2% 0 2% 10%;
+}
+@media (min-width: 768px) {
+    .botones-layout {
+        display: flex;
+        justify-content: center;
+        margin: 30px 5%;
+        gap: 3rem;
+    }
+}
+.boton{
+    display: block;
+    width: 85%;
+    margin: 20px auto;
+    height: 55px;
+    border-radius: 15px;
+    cursor: pointer;
+    line-height: 19px;
+}
+@media (min-width: 768px) {
+    .botones-layout input {
+        width: 40%;
+        margin: 0;
+    }
+}
+.boton:hover {
+    transform: scale(1.1);
+}
+.boton-encriptar {
+    background-color: #0A3871;
+    border: none;
+    color: #E5E5E5;
+}
+.boton-desencriptar {
+    background-color: #E5E5E5;
+    border: 0.5px solid #0A3871;
+    color: #0A3871;
+}
+.mensaje-criptico {
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.mensaje-criptico h2{
+    color: #343A40;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+}
+.textarea-criptico {
+    font-size: 25px;
+    height: 100px;
+    border-radius: 15px;
+}
+.textarea-criptico::placeholder {
+        text-align: center;
+}
+.text-footer {
+    margin-top: 10px;
+    text-align: center;
+}
+@media (min-width: 992px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 6%;
+    }
+    header h1 {
+        margin: 0 8% 0 0;
+    }
+
+    .layout-lateral {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .textarea-principal {
+        margin: 0 10%;
+        width: 80%;
+        height: 400px;
+    }
+    .mensaje-criptico {
+        margin-top: 15%;
+    }
+    .imagen-layout {
+        padding-top: 80%;
+        background-image: url(img-challenge/Muñeco.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .textarea-criptico {
+        min-height: 300px
+    }
+    .text-footer {
+        font-size: 20px;
+    }
+}
+.boton-copiar {
+    height: 40px;
+    background-color: #E5E5E5;
+    border: 0.5px solid #0A3871;
+    color: #0A3871;
+}
